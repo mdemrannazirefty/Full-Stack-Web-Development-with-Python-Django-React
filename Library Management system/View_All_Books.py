@@ -1,11 +1,17 @@
 def view_all_books(library):
+    print(f"\nLoaded {len(library)} Books from file.")
+    print("---------------------------------------------")
+
     if library!=[]:
-        for book in library:
-            print("\n*Book Details: ")
-            print(f"Title: {book['title']}\nAuthor Name: {book['authorN']}\nID NO: {book['Isbn']}\nPrice: {book['price']}\nQuantity: {book['quantity']}")
+        for index, book in enumerate(library, start=1):
+            print(f"*Book Details {index}: \nTitle: {book['Title']}\nAuthor Name: {book['Author']}\nID NO: {book['Isbn']}\nPublished Year:{book['Year']} \nPrice: {book['Price']}\nQuantity: {book['Quantity']}")
+            print("---------------------------------------------")
             print()
     else:
         print("No books available in the library")
+        print("---------------------------------------------")
         print()
+        return library
+    return library
 
-        
+

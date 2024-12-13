@@ -3,9 +3,9 @@ def search_book(library):
         print("The library is empty.")
         return library
 
-    searchbook = int(input("Enter Book ID: "))
+    searchbook = input("Enter Book Title: ")
     for book in library:
-        if book['Isbn'] == searchbook:  
+        if book['Title'] == searchbook:  
             print("\nBook Found")
             print("---------------------------------------------")
             print("*Book Details:")

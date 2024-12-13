@@ -2,12 +2,13 @@ from Save_Books import Save_Books
 
 def add_book(library):
     title = input("Enter Book Title: ")
-    authorN = input("Enter Author Name: ")
-    Isbn = int(input("Enter Book Id: "))
+    author = input("Enter Author Name: ")
+    isbn = int(input("Enter Book Id: "))
+    year= input("Enter Published Year: ")
     price = float(input("Enter Book Price: "))
     quantity = int(input("Enter Quantity: "))
     
-    book = {"title": title, "authorN": authorN, "Isbn": Isbn, "price": price, "quantity": quantity}
+    book = {"Title": title, "Author": author, "Isbn": isbn,"Year":year,"Price": price, "Quantity": quantity}
     if library is None:
         library = [] 
     
@@ -15,7 +16,6 @@ def add_book(library):
     Save_Books(library)
     print("Your Book Added Successfully")
     print()
-
     return library
 
    

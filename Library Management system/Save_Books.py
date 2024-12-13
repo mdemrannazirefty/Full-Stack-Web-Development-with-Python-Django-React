@@ -1,7 +1,10 @@
+import csv
+
 def Save_Books(library):
-    with open("libraryData.csv", "w") as fp:
+    with open("libraryData.csv", mode="w", newline="") as fp:
+        writer = csv.writer(fp)
+        writer.writerow(["Title", "Author", "Isbn","Year", "Price","Quantity"]) 
+        # title,author,isbn,year,price,quantity
         for book in library:
-            # Ensure the keys match exactly as in the dictionary
-            line = f"{book['title']},{book['authorN']},{book['Isbn']},{book['price']},{book['quantity']}\n"
-            fp.write(line)
-            return library
+            writer.writerow([book["Title"], book["Author"], book["Isbn"], book["Year"],book["Price"], book["Quantity"]])
+            

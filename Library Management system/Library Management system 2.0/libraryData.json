@@ -1,0 +1,43 @@
+[
+    {
+        "Title": "Book1",
+        "Author": "a",
+        "Isbn": 9584,
+        "Year": "2022",
+        "Price": 220.0,
+        "Quantity": 21,
+        "bookAddedAt": "13-12-2024 18:40:01",
+        "bookLastUpdatedAt": "13-12-2024 19:21:02",
+        "Authorn": "aa"
+    },
+    {
+        "Title": "Book2",
+        "Author": "s",
+        "Isbn": 4653,
+        "Year": 2023,
+        "Price": 200.0,
+        "Quantity": 5,
+        "bookAddedAt": "13-12-2024 18:40:38",
+        "bookLastUpdatedAt": ""
+    },
+    {
+        "Title": "Book3",
+        "Author": "d",
+        "Isbn": 6850,
+        "Year": 2000,
+        "Price": 220.0,
+        "Quantity": 10,
+        "bookAddedAt": "13-12-2024 18:41:03",
+        "bookLastUpdatedAt": ""
+    },
+    {
+        "Title": "Book4",
+        "Author": "q",
+        "Isbn": 3254,
+        "Year": 210,
+        "Price": 222.0,
+        "Quantity": 6,
+        "bookAddedAt": "13-12-2024 19:04:39",
+        "bookLastUpdatedAt": ""
+    }
+]
