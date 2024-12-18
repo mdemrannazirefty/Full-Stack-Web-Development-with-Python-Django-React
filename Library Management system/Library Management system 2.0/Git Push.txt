@@ -1,0 +1,21 @@
+echo "# Library-Management-system-2.0" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/mdemrannazirefty/Library-Management-system-2.0.git
+git push -u origin main
+
+
+git remote add origin https://github.com/mdemrannazirefty/Library-Management-system-2.0.git
+git branch -M main
+git push -u origin main
+
+
+git branch
+git checkout main
+git add .
+git commit -m "Your commit message here"
+git push origin main
+git pull origin main --rebase
+git push origin main
